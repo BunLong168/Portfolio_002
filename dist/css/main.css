@@ -463,7 +463,8 @@ a:hover {
   color: #1ba098; }
 
 .more-font {
-  font-size: 22px; }
+  font-size: 22px;
+  padding-bottom: 50px; }
 
 .more-margin {
   margin-bottom: 90px; }
