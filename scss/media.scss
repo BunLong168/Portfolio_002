@@ -1,0 +1,152 @@
+@media only screen and (max-width: 850px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -284px;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .about-lead {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 30px 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+
+    .main-img {
+      margin-top: 30px;
+    }
+  }
+  .navbar .right {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.animateBar1 {
+  animation: flipBar1 0.5s;
+  animation-fill-mode: forwards;
+}
+.animateBar2 {
+  animation: fadeBar2 0.5s;
+  animation-fill-mode: forwards;
+}
+.animateBar3 {
+  animation: flipBar3 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .text-fields {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw - 90px);
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: 15px;
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    #timeline ul li:nth-child(even) div:before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+    }
+  }
+
+  #work {
+    margin-top: 200px;
+  }
+
+  .contact {
+    &-a {
+      margin-top: 200px;
+      margin-left: 0;
+      width: 100%;
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+
+        .message-input {
+          grid-area: message;
+          height: 50px;
+          width: 88%;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #contact {
+    &-b {
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        border-top: 3px solid $main-color;
+        padding-top: 50px;
+        .div {
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+  .about-lead {
+    margin-left: 20px;
+  }
+}
