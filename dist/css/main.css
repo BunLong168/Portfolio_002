@@ -103,8 +103,8 @@ hr {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: #051622;
   color: white;
   font-family: "Courier New", Courier, monospace, sans-serif;
@@ -140,10 +140,10 @@ p {
   font-size: 18px;
   height: 26px; }
 
-img {
+.logo img {
   width: 100px;
   margin-left: 5px;
-  object-fit: fill; }
+  object-fit: cover; }
 
 .header-container {
   height: 100vh;
@@ -169,15 +169,13 @@ img {
   .header-container .header-content {
     margin-top: 180px; }
     .header-container .header-content .img-content {
-      margin-bottom: 64px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+      margin-bottom: 64px; }
       .header-container .header-content .img-content img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         border: 5px solid #1ba098;
-        border-radius: 50%; }
+        border-radius: 50%;
+        object-fit: cover; }
     .header-container .header-content .content {
       text-align: center; }
       .header-container .header-content .content .lead {
@@ -451,7 +449,8 @@ i:hover {
   z-index: 2;
   top: -250px;
   padding: 16px;
-  transition: transform 0.3s; }
+  transition: transform 0.3s;
+  margin-left: 0; }
   .mobileNav li {
     padding: 20px 0; }
 
