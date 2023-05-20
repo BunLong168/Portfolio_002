@@ -13,10 +13,7 @@
   // overflow-x: hidden;
   // box-sizing: border-box;
 }
-hr {
-  opacity: 0;
-  margin-top: 160px;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -43,6 +40,10 @@ a {
   color: #fff;
 }
 
+hr {
+  opacity: 0;
+  margin-top: 160px;
+}
 button:focus {
   outline: $main-color;
 }
@@ -497,7 +498,6 @@ i:hover {
   padding: 16px;
   transition: transform 0.3s;
   margin-left: 0;
-  
 
   li {
     padding: 20px 0;
@@ -520,6 +520,10 @@ a:hover {
 
 .more-margin {
   margin-bottom: 90px;
+}
+
+.message-input {
+  text-transform: none;
 }
 
 @import "media";
